@@ -24,8 +24,25 @@
 </template>
 
 <script>
+    import axios from 'axios'
+    import url from '@/service.config.js'
     export default {
+        data(){
+            return {
+                treeList:[]
+            }
+        },
+        created(){
+            let treeListUrl = url.getTreeList;
+           /* axios.get(treeListUrl).then(res=>{
+                console.log(111);
 
+            })*/
+            axios.get(treeListUrl).then(res => {
+                console.log(res);
+               // this.treeList = res.data;
+            })
+        }
     }
 </script>
 

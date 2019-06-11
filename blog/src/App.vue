@@ -74,7 +74,7 @@
       created(){
           let item = this.headerList;
           for(var i=0;i<item.length;i++){
-              console.log(item[i].aside)
+              //console.log(item[i].aside)
           }
 
       }
