@@ -9,6 +9,8 @@ import InformalEssay from './views/InformalEssay'
 import Message from './views/Message'
 import TreeHole from './views/TreeHole'
 import Aside from './components/Aside'
+import Cicle from './components/cicle'
+
 Vue.use(Router)
 
 export default new Router({
@@ -22,17 +24,29 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      component:Home
+      // component:Home
+        components:{
+            default:Home,
+            'aside':Aside
+        }
     },
       {
           path: '/aboutme',
           name: 'aboutme',
-          component: AboutMe
+          // component: AboutMe
+          components:{
+              default:AboutMe,
+              'aside':Aside
+          }
       },
       {
           path: '/article',
           name: 'article',
-          component: Article
+          // component: Article
+          components:{
+              default:Article,
+              'aside':Aside
+          }
       },
       {
           path: '/bookstore',
@@ -57,8 +71,16 @@ export default new Router({
       {
           path: '/treehole',
           name: 'treehole',
-          component: TreeHole
+          // component: TreeHole
+          components:{
+              default:TreeHole,
+              'aside':Aside
+          }
       },
+      {
+          path:'/cicle',
+          component:Cicle
+      }
 
   ]
 })

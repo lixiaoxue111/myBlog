@@ -10,7 +10,8 @@
         </el-col>
         <el-col :span="8">
           <div class="grid-content bg-purple">
-            <c-aside></c-aside>
+<!--            <c-aside></c-aside>-->
+            <router-view name="aside"></router-view>
           </div>
         </el-col>
       </el-row>
@@ -72,18 +73,16 @@
           }
       },
       created(){
-          let item = this.headerList;
-          for(var i=0;i<item.length;i++){
-              //console.log(item[i].aside)
-          }
+
 
       }
   }
 </script>
 <style>
-#app {
-
-}
+  html,body{
+    height: 100%;
+    position: relative;
+  }
   #content{
     margin-top: 100px;
   }
