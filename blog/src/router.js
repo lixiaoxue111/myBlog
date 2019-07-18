@@ -24,29 +24,29 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      // component:Home
-        components:{
+      component:Home
+        /*components:{
             default:Home,
             'aside':Aside
-        }
+        }*/
     },
       {
           path: '/aboutme',
           name: 'aboutme',
-          // component: AboutMe
-          components:{
+          component: AboutMe
+         /* components:{
               default:AboutMe,
               'aside':Aside
-          }
+          }*/
       },
       {
           path: '/article',
           name: 'article',
-          // component: Article
-          components:{
+          component: Article
+          /*components:{
               default:Article,
               'aside':Aside
-          }
+          }*/
       },
       {
           path: '/bookstore',
@@ -71,11 +71,11 @@ export default new Router({
       {
           path: '/treehole',
           name: 'treehole',
-          // component: TreeHole
-          components:{
+          component: TreeHole
+          /*components:{
               default:TreeHole,
               'aside':Aside
-          }
+          }*/
       },
       {
           path:'/cicle',

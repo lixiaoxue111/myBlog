@@ -2,7 +2,7 @@
   <el-container id="app">
     <c-header :headerList="headerList"></c-header>
     <el-main id="content">
-      <el-row :gutter="20">
+      <!--<el-row :gutter="20">
         <el-col :span="16">
           <div class="grid-content bg-purple">
             <router-view></router-view>
@@ -10,11 +10,12 @@
         </el-col>
         <el-col :span="8">
           <div class="grid-content bg-purple">
-<!--            <c-aside></c-aside>-->
+&lt;!&ndash;            <c-aside></c-aside>&ndash;&gt;
             <router-view name="aside"></router-view>
           </div>
         </el-col>
-      </el-row>
+      </el-row>-->
+        <router-view></router-view>
     </el-main>
   </el-container>
 </template>
@@ -81,7 +82,7 @@
 <style>
   html,body{
     height: 100%;
-    position: relative;
+    /*position: relative;*/
   }
   #content{
     margin-top: 100px;
